@@ -1,0 +1,86 @@
+body{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+  }
+  .sheading{
+    width: 100%;
+    height: 5em;
+    color: rgb(57, 99, 155);
+    font-size: 25px;
+    background-color: whitesmoke;
+    margin-top: 178px;
+    margin-bottom: 50px;
+  }
+  .sheading h1{
+    position: relative;
+    top: 25%;
+  }
+
+  .scontainer {
+    display: flex;
+    align-items: center;
+    margin-bottom: 100px;
+  }
+  
+  .scontainer img {
+    max-width: 50%;
+    height: auto;
+  }
+  
+  .text-list1, .text-list2, .text-list3 {
+    flex: 1;
+    padding: 20px;
+  }
+  
+  
+  .text-list1 ul,
+  .text-list2 ul,
+  .text-list3 ul {
+    list-style: none;
+    padding: 0;
+  }
+  .text-list1 li,
+  .text-list2 li,
+  .text-list3 li {
+    margin-bottom: 10px;
+    padding: 10px;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.6;
+    font-style: oblique;
+    text-align: center;
+  }
+.text-list1 .blue,
+.text-list1 .orange{
+    width: 120px;
+}
+
+.text-list2 .blue,
+.text-list2 .orange{
+    width: 870px;
+}
+
+.text-list3 .blue,
+.text-list3 .orange{
+    width: 160px;
+}
+
+
+  .blue {
+    background-color: #3498db;
+  }
+  .orange {
+    background-color: #e67e22;
+  }
+
+.text-list2 a{
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.7s, text-decoration 0.7s;
+}
+
+.text-list2 a:hover {
+  color: blue;
+  text-decoration: underline;
+}

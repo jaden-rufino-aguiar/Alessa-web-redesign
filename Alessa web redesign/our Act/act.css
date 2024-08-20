@@ -1,0 +1,100 @@
+body{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+  }
+  
+  .actheading{
+    width: 100%;
+    height: 5em;
+    color: rgb(57, 99, 155);
+    font-size: 25px;
+    background-color: whitesmoke;
+    margin-top: 178px;
+    margin-bottom: 50px;
+  }
+  
+  .actheading h1{
+    position: relative;
+    top: 25%;
+  }
+
+  .warp h1{
+    color:black;
+    text-align:center;
+    font-style: oblique;
+  }
+  .wrap{
+    width:85%;
+    margin:0 auto;
+    margin-bottom: 100px;
+  }
+#trade{
+  width: 500px;
+  height: auto;
+}
+
+.collapse {
+  background-color: rgba(255,255,255,0);
+  border-bottom: 1px solid blue;
+  cursor: pointer;
+  color: black;
+  padding: 10px;
+  margin:0px;
+  max-height:70px;
+  overflow:hidden;
+  transition: all 1.3s;
+  text-align: justify;
+  line-height: 1.8;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+
+.collapse * {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  
+}
+.collapse.active {
+   background-color: rgba(255,255,255,0.9);
+  box-shadow: 0 8px 17px 0 black;
+  z-index: 200;
+  color:#444;
+  max-height:3000px;
+  padding:10px 20px;
+  margin: 10px -10px;
+  transition: all 0.9s,max-height 4.8s;
+}
+.collapse b{
+  color: blue;
+}
+.collapse h2 {
+  color: black;
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: bolder;
+  font-style: italic;
+  position:relative;
+}
+.collapse h2::after{
+  content: "+";
+  text-align:center;
+  position:absolute;
+  width:15px;
+  height:15px;
+  border:1px solid #ccc;
+  border-radius:50%;
+  font-size:12px;
+  line-height:15px;
+  opacity:0.5;
+  right:0;
+  top:0;
+}
+.collapse:hover h2::after{
+  opacity:1;
+}
+
+.collapse.active h2::after{
+  content: "-";
+}

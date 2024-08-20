@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+<!--CSS and JS STARTS-->
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=100%, initial-scale=1">
+  <title>AL ESSA KUWAIT</title>
+  <link rel="icon" type="image/x-icon" href="/PICS/favicon.ico">
+  <link rel="stylesheet" href="/HomeCSS/Menu.css">
+  <link rel="stylesheet" href="/HomeCSS/home.css">
+</head>
+<script src="HomeCSS/script.js"></script>
+<script src="/HomeCSS/w3.js"></script>
+<!--CSS and JS ENDS-->
+
+<!--PAGE BODY STARTS -->
+
+<body>
+  <!--PAGE STARTS-->
+
+  <div w3-include-html="/nabar.html"></div>
+
+  <!-- Text and image Starts -->
+  <div style="margin-bottom: 1em;">
+    <div id="contain" class="slideshow-container" style="margin-top: 12em;">
+
+      <div class="mySlides fade" >
+        <a href="/our Act/Activities.html">
+        <img src="/PICS/01.jpg"  style="width:100%; height:500px" >
+      </a>
+      </div>
+      <div class="mySlides fade">
+        <a href="/our Act/Activities.html" target="_blank">
+        <img src="/PICS/02.jpg" style="width:100%; height:500px;">
+      </a>
+      </div>
+      <div class="mySlides fade">
+        <a href="/our Act/Activities.html" target="_blank">
+        <img src="/PICS/03.jpg" style="width:100%; height:500px;">
+      </a>
+      </div>
+      <div class="mySlides fade">
+        <a href="/our Act/Activities.html" target="_blank">
+        <img src="/PICS/04.jpg" style="width:100%; height:500px;">
+      </a>
+      </div>
+      <div class="mySlides fade">
+        <a href="/our Act/Activities.html" target="_blank">
+        <img src="/PICS/05.jpg" style="width:100%; height:500px;">
+      </a>
+      </div>
+      <div class="mySlides fade">
+        <a href="/our Act/Activities.html" target="_blank">
+        <img src="/PICS/06.jpg" style="width:100%; height:500px;">
+      </a>
+      </div>
+    </div>
+    <br>
+
+    <!-- The dots/circles -->
+    <div style="text-align:center">
+      <span class="dot" onclick="currentSlide(0)"></span>
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+      <span class="dot" onclick="currentSlide(4)"></span>
+      <span class="dot" onclick="currentSlide(5)"></span>
+    </div>
+    <div class="Mainpage">
+      <div class="text">
+        <div class="leftcolumn">
+          <div calss="row">
+            <h1>Introduction</h1>
+            <p>
+                &nbsp; Al-Essa group, a diversified organization, delivers total solutions to clients in various sectors belonging to both private and public institutions, in Kuwait.
+            </p>
+            <p>
+                &nbsp; "Sales through Service" is the key to our success. We care about the value that our customers can derive by their association with us over 500 people, employed across 3 subsidiary companies, and a group turnover in 2020 of USD 80M.
+            </p>
+            <p>
+                &nbsp; Al Essa delivers a superior customer experience.Our range of activities involves supplying products, supporting applications and providing maintenance for medical and analytical applications. The human resource requirements are met through supplemental staffing and home health-care programs.
+            </p>
+            <p>
+                &nbsp; We deliver complete solutions in facility engineering, providing mechanical piping, furniture, furnishing and equipment. We focus on improving quality of life through our rehabilitation expertise. In addition, we have executed several projects on a turnkey basis by combining our local project management and project support expertise with international technology partners.
+            </p>
+            <p>
+                &nbsp; Our ability to undertake this comprehensive range of activities comes from more than 44 years of corporate experience and the efforts of our dedicated employees making us proud of our unparalleled reputation for providing quality solutions, the result of corporate ethos that has won recognition from our valued customers.
+            </p>
+            <p>
+                &nbsp; A capital base of USD 18M and the diversified nature of operations ensure long-term stability and growth. As we contemplate our future, we are confident of our abilities to successfully meet the challengers and size opportunities that enhance stake holder.
+            </p>
+          </div>
+          <br><br>
+          <div class="list">
+            <div class="list1">
+
+              
+            </div>
+
+          </div>
+        </div>
+      </div>
+      
+      <section class="VISMIS" id="viss">
+        <div class="asd" style="  margin-top: 30px;">
+          <div class="VTEXT">
+            <h3>VISION</h3>
+
+            <p><li>We will nurture and enable people, our greatest resource.</li>
+              <li>We will engage in critical thinking to drive business.</li>
+              <li>We will grow consciously by executing with discipline,<br> &nbsp;&nbsp;&nbsp;&nbsp; managing risk and exploiting opportunities.</li>
+               </p>
+          </div>
+          <div class="MTEXT">
+
+            <h3>MISSION</h3>
+
+            <p>
+              <li> To be one of top three solution providers in Medical, Scientific &<br>&nbsp;&nbsp;&nbsp;&nbsp; Education fields engaging in trade & service activities in Kuwait.</li>
+              <li> To develop opportunities in Information Technology applied to<br>&nbsp;&nbsp;&nbsp;&nbsp; these fields.</li>
+              <li> To apply our knowledge and expertise regionally.</li>
+            </p>
+          </div>
+        </div>
+      </section>
+    </div>
+<br><br><br>
+    <!-- Text and image Ends -->
+  </div>
+  <!-- Footer Starts -->
+  <div w3-include-html="/footer.html"></div>
+  <!-- Footer Ends -->
+
+  <!--Page ENDS-->
+
+  <!--  JS Starts -->
+  <script>
+    w3.includeHTML();
+  </script>
+  <script>
+    let isMouseHover = false
+    let test = document.getElementById("contain");
+    test.addEventListener("mouseleave", function (event) {
+      isMouseHover = false
+    }, false);
+    test.addEventListener("mouseover", function (event) {
+      isMouseHover = true
+    }, false);
+    var slideIndex = 0;
+    showSlides();
+    function currentSlide(num) {
+      slideIndex = num;
+      showSlides();
+    }
+    setInterval(()=>{if (!isMouseHover)showSlides();}, 4000);
+    function showSlides() {
+      let i;
+      let slides = document.getElementsByClassName("mySlides");
+      let dots = document.getElementsByClassName("dot");
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) { slideIndex = 1 }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex - 1].style.display = "block";
+      dots[slideIndex - 1].className += " active";
+    }
+  </script>
+  <!--  JS Ends -->
+</body>
+<!--PAGE BODY ENDS-->
+
+</html>

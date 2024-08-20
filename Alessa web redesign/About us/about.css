@@ -1,0 +1,69 @@
+body{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+  }
+  
+  .aheading{
+    width: 100%;
+    height: 5em;
+    color: rgb(57, 99, 155);
+    font-size: 25px;
+    background-color: whitesmoke;
+    margin-top: 178px;
+    margin-bottom: 50px;
+  }
+  
+  .aheading h1{
+    position: relative;
+    top: 25%;
+  }
+  
+.Vision12-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px auto;
+    max-width: 1000px;
+  }
+  
+  .Vision1,
+  .Vision2 {
+    flex: 0 0 calc(50% - 20px);
+  }
+  .VisTEXT1,
+  .VisTEXT2 {
+    display: inline-block;
+    vertical-align: top;
+    font-size: 18px;
+    font-weight: 450;
+    line-height: 1.6;
+    font-style: oblique;
+  }
+  .VisTEXT3 {
+    display: block;
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: 450;
+    line-height: 1.6;
+    font-style: oblique;
+    
+  }
+  .Ethos{
+    margin-left: 500px;
+    margin-right: 500px;
+    text-align: justify;
+    font-style: oblique;
+  }
+  .Vision1 {
+    margin-bottom: 20px;
+  }
+#coordinator {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+   #coordinator img{
+    height: 250px;
+    width: 450px;
+  }

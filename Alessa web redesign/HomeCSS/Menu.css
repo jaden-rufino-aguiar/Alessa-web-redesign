@@ -1,0 +1,27 @@
+html{
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  scroll-padding-top: 5rem;
+  overflow-x:auto;
+
+}
+.mobile-container{
+  z-index: 50;
+}
+html::-webkit-scrollbar {
+  width: 1rem;
+}
+html::-webkit-scrollbar-track {
+  background: #000;
+}
+html::-webkit-scrollbar-thumb {
+  background: rgb(173, 216, 230);
+}
+body {
+    box-sizing: border-box;
+    
+    font-family: Roboto, sans-serif;;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 15px;
+    }
